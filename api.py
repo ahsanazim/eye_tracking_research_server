@@ -40,4 +40,4 @@ def content_extractor():
         response = jsonify(res_dict)
         return response
 
-app.run()
+app.run(host='0.0.0.0')
