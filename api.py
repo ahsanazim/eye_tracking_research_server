@@ -7,11 +7,13 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 app.config["DEBUG"] = True
 
+# debug in heroku
 print("RUNNING")
 
-@app.route('/')
-def hello_world():
-    return "hello"
+## just for testing:
+# @app.route('/')
+# def hello_world():
+#     return "hello"
 
 @app.route('/', methods=['GET', 'POST', 'OPTIONS'])
 @cross_origin()
