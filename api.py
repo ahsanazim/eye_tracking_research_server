@@ -6,6 +6,8 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 app.config["DEBUG"] = True
 
+print("RUNNING")
+
 @app.route('/', methods=['GET', 'POST', 'OPTIONS'])
 @cross_origin()
 def content_extractor():
