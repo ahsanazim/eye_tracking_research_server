@@ -8,6 +8,10 @@ links:
 * [https://dashboard.heroku.com/apps/](https://dashboard.heroku.com/apps/)
 * [https://mysterious-fortress-86319.herokuapp.com/](https://mysterious-fortress-86319.herokuapp.com/)
 
+testing server from command line w/ `curl`:
+
+`curl -X POST -H "Content-Type: text/plain" --data "https://texasobserver.org/anatomy-tragedy/" https://mysterious-fortress-86319.herokuapp.com/`
+
 commands:
 * `heroku open`
 * `git push heroku master`
